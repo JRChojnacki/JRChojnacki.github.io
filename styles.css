@@ -1,0 +1,90 @@
+/* Master styles*/
+body{
+    margin: 0px;
+    background-color:  slategrey;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Nav styles*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side{
+    display: flex;
+}
+.right-side>.brand-style {
+    color: white;
+}
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper{
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper > a{
+    color:rgb(166, 176, 187);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper a:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+/*Portfolio styles*/
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:45%;
+}
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+/* Activates under hover*/
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: darkorange;
+}
+.img-text-wrapper:hover .title{
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper .title{
+    font-size: large;
+    color: white;
+    font-weight: 600;
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(40%);
+}
+
