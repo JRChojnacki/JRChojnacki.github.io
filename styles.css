@@ -76,18 +76,19 @@ body{
     font-weight: 600;
     color: transparent;
     text-decoration: none;
+    text-align:justify;
 }
 /* Activates under hover*/
 .img-text-wrapper:hover .subtitle{
     font-weight: 600;
     color: darkorange;
+    text-align:justify;
 }
 .img-text-wrapper:hover .title{
     font-weight: 600;
     transition: 1s;
     color: transparent;
 }
-
 .img-text-wrapper .title{
     font-size:1cm;
     color: white;
@@ -98,3 +99,56 @@ body{
     filter: brightness(40%);
 }
 
+.introduction-image{
+    height: 350px;
+    width: 100%;
+    padding-right: 200px;
+}
+.introduction-description{
+    font-size:20pt;
+    color: whitesmoke;
+    padding-left: 2cm;
+    padding-right: 1cm;
+    text-align:justify;
+}
+.introduction-description .title{
+    font-size:30pt;
+    color: darkorange;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.news-text-wrapper{
+    display: grid;
+    grid-template-rows: min-content;
+}
+.news-text-wrapper .banner{
+    font-size:30pt;
+    color: darkorange;
+    font-weight: 600;
+    padding-bottom: 0.5cm;
+    padding-top: 0.5cm;
+    text-transform: uppercase;
+}
+.news-text-wrapper .news{
+    font-size:14pt;
+    color: whitesmoke;
+    padding-bottom: 2cm;
+    text-align:justify;
+}
+.news-text-wrapper .news .title{
+    font-size:20pt;
+    color: darkorange;
+    padding-bottom: 0.2cm;
+    text-transform: uppercase;   
+}
+.intext-link-wrapper{
+    display: inline-block;
+}
+.intext-link-wrapper > a{
+    color: rgb(247, 199, 141);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.intext-link-wrapper a:hover{
+    color: darkorange;
+}
