@@ -2,6 +2,7 @@
 body{
     margin: 0px;
     background-color:  slategrey;
+    font-family: "Roboto","sans-serif" ;
 }
 .container{
     display: grid;
@@ -38,6 +39,10 @@ body{
     border-bottom: 1px solid white;
     color: white;
 }
+.nav-link-active a{
+    border-bottom: 1px solid white;
+    color: white !important;
+}
 /*Portfolio styles*/
 .portfolio-items-wrapper{
     display: grid;
@@ -53,19 +58,24 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.img-text-wrapper{
+.img-text-wrapper>a{
     position: absolute;
-    top: 45%;
+    top: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left:45%;
+    padding-left:20%;
+    padding-right:20%;
+}
+.img-text-wrapper a{
+    text-decoration: none;
 }
 .img-text-wrapper .subtitle{
     transition: 1s;
     font-weight: 600;
     color: transparent;
+    text-decoration: none;
 }
 /* Activates under hover*/
 .img-text-wrapper:hover .subtitle{
@@ -79,7 +89,7 @@ body{
 }
 
 .img-text-wrapper .title{
-    font-size: large;
+    font-size:1cm;
     color: white;
     font-weight: 600;
 }
