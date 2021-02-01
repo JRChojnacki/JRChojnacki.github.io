@@ -11,11 +11,16 @@ body{
 /* Nav styles*/
 .nav-wrapper{
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    grid-template-columns: 1fr;
     justify-content: space-between;
     padding: 38px;
+
 }
-.nav-wrapper{
- 
+.nav-wrapper{ 
     background:rgb(0, 0, 0) ;
     border-color: black solid;
     z-index: 1;
@@ -53,6 +58,7 @@ body{
 }
 /*Portfolio styles*/
 .portfolio-items-wrapper{
+    margin-top: 97px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -96,11 +102,13 @@ body{
     font-weight: 600;
     transition: 1s;
     color: transparent;
+    text-transform: uppercase;
 }
 .img-text-wrapper .title{
     font-size:1cm;
     color: white;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .img-darken{
     transition: 1s;
@@ -108,10 +116,15 @@ body{
 }
 /*Introduction and Home styles*/
 .home-items-wrapper{
+    margin-top: 97px;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+.about-me-wrapper{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: auto;
+
     background:rgb(0, 0, 0);
     padding-left: 10px;
     padding-right: 10px;
@@ -120,6 +133,8 @@ body{
 padding-right: 15%;
 padding-left: 15%;
 size: initial;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 .introduction-image{
     height: 350px;
